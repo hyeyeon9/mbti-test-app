@@ -3,6 +3,7 @@
 import { useMbtiStore } from "@/stores/mbti-store";
 import Link from "next/link";
 import { useState } from "react";
+import Count from "./Count";
 
 export default function NameInput() {
   const { setName, reset } = useMbtiStore();
@@ -18,7 +19,7 @@ export default function NameInput() {
     <>
       <div className="flex flex-col">
         <div className="flex flex-col">
-          <label htmlFor="name">
+          <label htmlFor="name" className="mt-5">
             이름을 작성해주세요
           </label>
           <div className="mb-12">
@@ -34,7 +35,6 @@ export default function NameInput() {
           </div>
         </div>
       </div>
-
       <Link href="/test">
         <button
           onClick={handleStart}
@@ -44,6 +44,7 @@ export default function NameInput() {
           테스트 시작
         </button>
       </Link>
+      <Count />
     </>
   );
 }
