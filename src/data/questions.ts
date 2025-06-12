@@ -15,26 +15,26 @@ export const questions: Question[] = [
   },
   {
     id: 2,
-    text: "팀플 조원이, 아무것도 안 했을 때",
+    text: "단톡에 갑자기,'얘들아 싸움 직관함' 올라옴",
     options: [
-      { text: "ㅇㅋ 내가 해줄게… 그냥 말섞기 싫어", value: "PI" },
-      { text: "다들 역할 나눠서 다시 정리해요", value: "JT" },
+      { text: "(조용히 캡쳐) 내적 환호만 하고 침묵", value: "I" },
+      { text: "카메라 켜!! 빨리 전화해 봐!!", value: "E" },
     ],
   },
   {
     id: 3,
     text: "카톡 안 읽씹 5시간째",
     options: [
-      { text: "아 됐다 관심 꺼졌음 (쿨한 척)", value: "FI" },
-      { text: "답장 없는 이유 1~5 써봄 (추리 시작)", value: "TN" },
+      { text: "아 됐다 관심 꺼졌음 (근데 새벽에 생각남)", value: "NF" },
+      { text: "헐ㅠ 속상했는데 유튜브 보다가 까먹음", value: "ST" },
     ],
   },
   {
     id: 4,
     text: "친구가 30분 늦는다고 함",
     options: [
-      { text: "ㅇㅋ 나도 안 나가고 있었음~", value: "PI" },
-      { text: "그럼 왜 3시에 보자고 한 건데?", value: "JT" },
+      { text: "ㅇㅋ 나도 안 나가고 있었음~", value: "P" },
+      { text: "그럼 왜 3시에 보자고 한 건데?", value: "J" },
     ],
   },
   {
@@ -49,8 +49,8 @@ export const questions: Question[] = [
     id: 6,
     text: "좋아하는 사람이,'나 요즘 너랑 있으면 편해'",
     options: [
-      { text: "편하다는 게 호감이랑 다르지…?", value: "TN" },
-      { text: "나도 그래! 😊 (일단 설렘에 취함)", value: "FS" },
+      { text: "편하다는 게 호감이랑 다르지…?", value: "N" },
+      { text: "나도 그래! 😊 (일단 설렘에 취함)", value: "S" },
     ],
   },
   {
@@ -65,8 +65,8 @@ export const questions: Question[] = [
     id: 8,
     text: "싸움 후 연락 안 오는 상대",
     options: [
-      { text: "‘지금쯤 미안해할 때다’ 생각하고 기다림 ", value: "JT" },
-      { text: "먼저 사과 보냄 ", value: "FP" },
+      { text: "‘지금쯤 미안해할 때다’ 생각하고 기다림 ", value: "T" },
+      { text: "혹시 내가 상처 줬나? 걱정됨 ", value: "F" },
     ],
   },
   {
@@ -79,10 +79,10 @@ export const questions: Question[] = [
   },
   {
     id: 10,
-    text: "지하철에서 아는 사람 봤는데 약간 애매함..",
+    text: "회사 복도에서, 같은 신입이 마이쮸 줌",
     options: [
-      { text: "그냥 못 본 척하고 내릴 때까지 감", value: "I" },
-      { text: "인사 안 하면 찝찝함. 일부러 시선 맞춤", value: "E" },
+      { text: "고맙다고 했는데 어색해서 눈 못 마주침", value: "I" },
+      { text: "헐 감사합니다~ 다음엔 제가 드릴게요!", value: "E" },
     ],
   },
   {
@@ -90,15 +90,15 @@ export const questions: Question[] = [
     text: "누가 내 물건 몰래 썼을 때",
     options: [
       { text: "말도 없이 왜 써?", value: "TJ" },
-      { text: "그냥 속으로만 씹고, 피함", value: "FI" },
+      { text: "그냥 속으로만 씹고, 피함", value: "FP" },
     ],
   },
   {
     id: 12,
     text: "같이 여행온 친구가,‘나 오늘 그냥 숙소에 있을래’,라고 함",
     options: [
-      { text: "헉 그럼 나도 오늘 쉴까? ㅠ", value: "FP" },
-      { text: "ㅇㅋ 그럼 나 혼자 다녀올게~", value: "TJ" },
+      { text: "헉 그럼 나도 오늘 쉴까? ㅠ", value: "P" },
+      { text: "ㅇㅋ 그럼 나 혼자 다녀올게~", value: "J" },
     ],
   },
 ];
