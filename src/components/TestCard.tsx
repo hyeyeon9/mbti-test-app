@@ -1,5 +1,6 @@
 "use client";
 
+import { logResult } from "@/app/actions/logResult";
 import Loading from "@/app/loading";
 import { questions } from "@/data/questions";
 import { calculateMbti } from "@/lib/calculateMbti";
@@ -8,14 +9,14 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function TestCard() {
-  const { answers, current, addAnswer, setCurrent } = useMbtiStore();
+  const { answers, current, addAnswer, setCurrent, name } = useMbtiStore();
   const [isRouting, setIsRouting] = useState(false);
 
   const currentQuestion = questions[current]; // 현재 질문
 
   const router = useRouter();
 
-  const handleAnswer = (value: string) => {
+  const handleAnswer = async (value: string) => {
     const firstValue = value.charAt(0) as string;
     const secondValue = value.charAt(1) as string;
 
@@ -28,6 +29,9 @@ export default function TestCard() {
         firstValue,
         ...(secondValue ? [secondValue] : []),
       ]);
+
+      await logResult(name, mbti);
+
       setTimeout(() => {
         router.push(`/result?type=${mbti}`);
       }, 300);
@@ -42,7 +46,7 @@ export default function TestCard() {
     setCurrent(current + 1);
   };
   return (
-    <div className="w-full h-[500px] p-2 ">
+    <div className="w-full h-[500px] p-2">
       {isRouting && <Loading />}
       <div className="text-center mb-3 -mt-10">
         Question {current + 1} of {questions.length}
