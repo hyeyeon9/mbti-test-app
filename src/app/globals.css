@@ -1,4 +1,29 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ownglyph_corncorn-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2412-1@1.0/Ownglyph_corncorn-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "Ownglyph_Seung_Hoon-Rg";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/Ownglyph_Seung_Hoon-Rg.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 사용을 위한 클래스 */
+.seung-hoon-font {
+    font-family: "Ownglyph_Seung_Hoon-Rg", sans-serif;
+}
+.corn-font {
+  font-family: "Ownglyph_corncorn-Rg", sans-serif;
+}
 
 :root {
   --background: #ffffff;
