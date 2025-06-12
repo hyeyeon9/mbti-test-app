@@ -30,6 +30,7 @@ export default async function ResultPage({ searchParams }: Props) {
                 alt="name"
                 width={120}
                 height={100}
+                priority
                 className="absolute top-6 -left-2 -rotate-12"
               />
               <Name />
@@ -39,6 +40,7 @@ export default async function ResultPage({ searchParams }: Props) {
                 alt={result.label}
                 width={120}
                 height={100}
+                priority
                 className="absolute top-6 right-2
           "
               />
@@ -62,6 +64,7 @@ export default async function ResultPage({ searchParams }: Props) {
                 alt={result.label}
                 width={160}
                 height={160}
+                priority
                 className="w-[140px] h-[168px] object-cover mx-20 mb-5 z-10"
                 crossOrigin="anonymous"
               />
@@ -142,6 +145,7 @@ export default async function ResultPage({ searchParams }: Props) {
                       alt="leaf3"
                       width={22}
                       height={100}
+                      priority
                       className="absolute -top-5 -left-3
           "
                     />
@@ -189,6 +193,7 @@ export default async function ResultPage({ searchParams }: Props) {
                     alt="Name"
                     width={22}
                     height={100}
+                    priority
                     className="absolute -top-8 left-0
                     lg:right-[47%]
           lg:bottom-[63.5%]
@@ -230,6 +235,7 @@ export default async function ResultPage({ searchParams }: Props) {
                   alt="Name"
                   width={67}
                   height={100}
+                  priority
                   className="absolute bottom-16 right-0            "
                 />
 
@@ -238,6 +244,7 @@ export default async function ResultPage({ searchParams }: Props) {
                   alt="Name"
                   width={28}
                   height={100}
+                  priority
                   className="absolute bottom-28 right-[87px]"
                 />
               </div>

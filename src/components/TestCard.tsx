@@ -1,12 +1,15 @@
 "use client";
 
+import Loading from "@/app/loading";
 import { questions } from "@/data/questions";
 import { calculateMbti } from "@/lib/calculateMbti";
 import { useMbtiStore } from "@/stores/mbti-store";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 export default function TestCard() {
   const { answers, current, addAnswer, setCurrent } = useMbtiStore();
+  const [isRouting, setIsRouting] = useState(false);
 
   const currentQuestion = questions[current]; // 현재 질문
 
@@ -19,12 +22,15 @@ export default function TestCard() {
     if (current < questions.length - 1) {
       // 다음 질문으로
     } else {
+      setIsRouting(true);
       const mbti = calculateMbti([
         ...answers,
         firstValue,
         ...(secondValue ? [secondValue] : []),
       ]);
-      router.push(`/result?type=${mbti}`);
+      setTimeout(() => {
+        router.push(`/result?type=${mbti}`);
+      }, 300);
       return;
     }
 
@@ -37,6 +43,7 @@ export default function TestCard() {
   };
   return (
     <div className="w-full h-[500px] p-2 ">
+      {isRouting && <Loading />}
       <div className="text-center mb-3 -mt-10">
         Question {current + 1} of {questions.length}
       </div>
@@ -48,7 +55,7 @@ export default function TestCard() {
       ></div>
       <div className=" w-full h-[150px] text-center text-[23px] font-bold p-9 mb-10 line-clamp-2">
         <h1> {currentQuestion.text.split(",")[0]}</h1>
-         <h1> {currentQuestion.text.split(",")[1]}</h1>
+        <h1> {currentQuestion.text.split(",")[1]}</h1>
       </div>
       <div className="flex flex-col gap-5 px-5 w-full ">
         {currentQuestion.options.map((option, index) => (
