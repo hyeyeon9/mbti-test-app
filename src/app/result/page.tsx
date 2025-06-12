@@ -3,6 +3,25 @@ import ResultButtons from "@/components/ResultButtons";
 import { MBTI_RESULTS, MbtiResult } from "@/data/mbti-results";
 import Image from "next/image";
 
+
+export const metadata = {
+  title: "MBTI 테스트 결과",
+  description: "팩폭과 귀여움 사이, 당신의 성향은?",
+  openGraph: {
+    title: "MBTI 테스트 결과",
+    description: "팩폭과 귀여움 사이, 당신의 성향은?",
+    images: [
+      {
+        url: "https://mbti-test-app-iota.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "MBTI 썸네일",
+      },
+    ],
+    type: "website",
+  },
+};
+
 interface Props {
   searchParams: Promise<{ type?: string }>;
 }

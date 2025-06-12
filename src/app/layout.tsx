@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     description: "팩폭과 귀여움 사이, 당신의 성향은?",
     images: [
       {
-        url: "https://mbti-test-app.vercel.app/og-image.png",
+        url: "https://mbti-test-app-iota.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "MBTI 썸네일",
