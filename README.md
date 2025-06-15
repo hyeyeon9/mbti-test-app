@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MBTI 프로필 테스트
+## 📌 프로젝트 개요
+MBTI 프로필 테스트는 12가지 현실 기반 질문을 통해 사용자의 성향을 분석하고, 결과로 자신을 유쾌하게 돌아볼 수 있는 성격 유형 테스트 웹앱입니다. </br>
+Next.js 기반으로 페이지 설계, 상태 관리, 배포까지 직접 구현하며 </br>
+프론트엔드 개발과 사용자 경험 설계의 전반적인 흐름을 익히기 위해 진행한 사이드 프로젝트입니다.
 
-## Getting Started
+---
+## 🛠 기술 스택
 
-First, run the development server:
+**Frontend**  
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logoColor=white)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**배포**  
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
+## 주요 기능
+- 12개의 상황형 MBTI 질문 + 2지선다 선택지 구성
+- 선택값 기반 MBTI 계산 로직
+- 16가지 MBTI 결과: 성향 요약, 해설 포함
+- 결과 페이지 공유
+- 상태 관리: 질문 진행 상태 및 결과 계산을 Zustand로 관리
 
-To learn more about Next.js, take a look at the following resources:
+---
+## 화면 구성
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+## 프로젝트 회고
+재미와 기술을 동시에 담아보고 싶어서 시작한 사이드 프로젝트였습니다. </br>
+Next.js App Router 구조를 직접 설계하고, 서버 컴포넌트와 클라이언트 컴포넌트를 적절히 분리하는 경험을 통해 </br>
+렌더링 최적화와 폴더 기반 라우팅의 장점을 익힐 수 있었습니다.
