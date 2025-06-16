@@ -13,6 +13,9 @@ Next.js 기반으로 페이지 설계, 상태 관리, 배포까지 직접 구현
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 ![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge&logoColor=white)
 
+**Backend**  
+[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+
 
 **배포**  
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
@@ -29,6 +32,11 @@ Next.js 기반으로 페이지 설계, 상태 관리, 배포까지 직접 구현
 
 ---
 ## 화면 구성
+<div  class="flex gap-2">
+  <img width="320" alt="스크린샷 2025-06-16 오후 4 29 08" src="https://github.com/user-attachments/assets/e9bb4e11-97c6-4b29-a2c4-d05efa610e4f" />
+<img width="320" alt="스크린샷 2025-06-16 오후 4 28 56" src="https://github.com/user-attachments/assets/85bd15c2-eef7-4b8e-8d4f-ac428dd33d57" />
+<img width="320" alt="스크린샷 2025-06-16 오후 4 29 33" src="https://github.com/user-attachments/assets/8ee055b0-1522-405e-a3e4-5876d779ee85" />
+</div>
 
 
 ---
